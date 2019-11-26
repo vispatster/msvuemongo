@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+  vue-cosmosdb:
+    depends_on:
+      -  mongo
+    image: vue-cosmosdb
+    build: .
+    env_file:
+      - .env
+    ports:
+      - 3001:3001
+      - 9229:9229
+    command: node --inspect=0.0.0.0:9229 index.js
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017      
