@@ -26,20 +26,20 @@
     "vue-property-decorator": "^8.3.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "concurrently": "^3.5.0",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
+    "@babel/core": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^5.0.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "file-loader": "^5.0.2",
     "node-sass": "^4.13.0",
     "sass-loader": "^8",
-    "ts-loader": "^3.1.1",
-    "typescript": "^2.6.1",
-    "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.3.4",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
   }
 }
