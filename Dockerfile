@@ -3,8 +3,6 @@ FROM node:alpine as client-app
 LABEL authors="John Papa"
 WORKDIR /usr/src/app
 COPY ["package.json", "npm-shrinkwrap.json*", "./"]
-RUN npm i -g npm-check-updates
-RUN ncu -u
 RUN npm install
 COPY . .
 RUN npm run build
@@ -13,8 +11,6 @@ RUN npm run build
 FROM node:alpine as node-server
 WORKDIR /usr/src/app
 COPY ["package.json", "npm-shrinkwrap.json*", "./"]
-RUN npm i -g npm-check-updates
-RUN ncu -u
 RUN npm install --production && mv node_modules ../
 COPY . .
 
